@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAW FIRM | HOME</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <!-- -------| SLIDER |-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- -------| HEADER NAV |----- -->
+      <nav class="main-header-nav">
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#">Services</a></li>
+
+          <li class="app-logo-container">
+            <a class="app-logo" href="#"><img src="images/logo.jpeg" /></a>
+          </li>
+
+          <li><a class="nav-link" href="#">Team</a></li>
+          <li><a class="nav-link" href="#">News</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- -------| HERO SECTION |----- -->
+    <div class="hero-section">
+      <div class="splide hero-section-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide hero-section-slide">
+              <div class="hero-section-content">
+                <h2 class="section-heading">Dedicated to Excellence</h2>
+                <p class="section-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  veritatis quae omnis repellat ab ad velit itaque ratione
+                  inventore dicta placeat temporibus incidunt, quo ipsa, amet
+                  doloribus voluptas soluta minima.Dedicated to excellence
+                </p>
+                <button class="btn btn-primary">Contact</button>
+              </div>
+            </li>
+
+            <li class="splide__slide hero-section-slide">
+              <div class="hero-section-content">
+                <h2 class="section-heading">Dedicated to excellence</h2>
+                <p class="section-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  veritatis quae omnis repellat ab ad velit itaque ratione
+                  inventore dicta placeat temporibus incidunt, quo ipsa, amet
+                  doloribus voluptas soluta minima.Dedicated to excellence
+                </p>
+                <button class="btn btn-primary">Contact</button>
+              </div>
+            </li>
+
+            <li class="splide__slide hero-section-slide">
+              <div class="hero-section-content">
+                <h2 class="section-heading">Dedicated to excellence</h2>
+                <p class="section-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  veritatis quae omnis repellat ab ad velit itaque ratione
+                  inventore dicta placeat temporibus incidunt, quo ipsa, amet
+                  doloribus voluptas soluta minima.Dedicated to excellence
+                </p>
+                <button class="btn btn-primary">Contact</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------| FEATURE SECTION |----- -->
+    <div class="container">
+      <div style="text-align: center">
+        <h1 class="contact-heading">Contact Us</h1>
+        <p>We provide legal services</p>
+        <br />
+        <p class="contact-head-2">Welcome to Justice</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/map.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="usa">India</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Splide(".splide").mount();
+    </script>
+  </body>
+</html>
